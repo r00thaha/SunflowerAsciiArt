@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Sunflower for Maria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="c" aria-label="A big sunflower rising and blooming in wind-blown grass at night, drawn in colored ASCII letters"></canvas>
+<div id="h">TAP ANYWHERE TO PLANT THE SEED</div>
+<audio id="m" src="music.mp3" loop preload="auto"></audio>
+<button id="p" type="button">SCREENSHOT</button>
+<button id="r" type="button" hidden>REPLAY</button>
+<button id="env" type="button" aria-label="Open the letter"></button>
+<div id="paper" role="dialog" aria-modal="true" aria-label="Your letter" hidden>
+<div class="wrap"><button id="x" type="button" aria-label="Close the letter">×</button><div class="sheet"><div id="letter"></div></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
